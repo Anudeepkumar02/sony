@@ -1,0 +1,10 @@
+---
+- hosts: dev
+  tasks
+  - name: start the docker container
+    docker_container:
+      name: sony
+      image: "2222s/sony:$BUILD_NUMBER"
+      state: started
+      published_ports:
+        - 0.0.0.0:82:8080 
