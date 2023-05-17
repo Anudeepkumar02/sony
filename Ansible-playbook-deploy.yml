@@ -1,6 +1,6 @@
 ---
 - hosts: dev
-  become: ture
+  become: True
   tasks:
     - name: start the docker container
       docker_container:
