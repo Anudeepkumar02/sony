@@ -2,10 +2,10 @@
 - hosts: dev
   become: True
   tasks:
-    -name: pip install
-     apt:
-       name: python-pip
-       state: present
+    - name: pip install
+      apt:
+        name: python-pip
+        state: present
     - name: Install docker-py module
       pip:
         name: docker-py
